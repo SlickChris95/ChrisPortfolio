@@ -84,6 +84,18 @@
     width: 45px;
     margin: 0px 10px 0px 10px; }
 
+#project {
+  margin: 80px 0 30px 0; }
+  #project h1 {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px; }
+  #project .project-pic {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-color: #336e7b; }
+
 /* Media Queries */
 @media only screen and (min-width: 900px) {
   #hero #roles {
