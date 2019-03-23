@@ -95,6 +95,10 @@
     height: 300px;
     margin: 10px;
     background-color: #336e7b; }
+  #project .project-link {
+    color: black; }
+    #project .project-link:hover {
+      text-decoration: none; }
 
 /* Media Queries */
 @media only screen and (min-width: 900px) {

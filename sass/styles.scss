@@ -106,11 +106,18 @@ $green-blue: #336e7b;
     padding: 10px;
     margin-bottom: 50px;
   }
+
     .project-pic{
       width: 300px;
       height: 300px;
       margin: 10px;
       background-color: $green-blue;
+    }
+    .project-link {
+      color: black;
+      &:hover {
+        text-decoration: none;
+      }
     }
 }
 
