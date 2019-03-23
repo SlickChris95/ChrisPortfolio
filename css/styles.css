@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+#skills {
+  margin: 120px 0px 60px 0px; }
+  #skills .skills-column {
+    margin-bottom: 50px; }
+    #skills .skills-column h2 {
+      color: #336e7b; }
+  #skills #front-end-title {
+    margin-bottom: 46px; }
+  #skills .skill-container-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    #skills .skill-container-container .skills-container {
+      width: 120px;
+      margin: 10px; }
+      #skills .skill-container-container .skills-container h3 {
+        font-size: 26px; }
+      #skills .skill-container-container .skills-container .skills {
+        font-size: 50px;
+        display: inline; }
+  #skills #softskills-title {
+    margin-bottom: 47px; }
+  #skills .softskills-container {
+    font-size: 26px; }
+
+#hero {
+  background: url("/imgs/space-back.jpg") 50% 0 repeat fixed;
+  background-color: purple;
+  color: #E2D072;
+  min-height: 500px;
+  position: relative; }
+  #hero #roles {
+    margin: 0 auto;
+    width: 100%;
+    padding: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 30px; }
+    #hero #roles p {
+      margin: 10px;
+      padding: 15px; }
+  #hero figure {
+    width: 200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #hero figure img {
+      position: relative;
+      top: 60px; }
+
+#about {
+  margin-top: 100px; }
+  #about #profile-pic {
+    width: 300px;
+    border-radius: 10px; }
+  #about #logo-container {
+    width: 300px;
+    text-align: center; }
+  #about .logo {
+    width: 45px;
+    margin: 0px 10px 0px 10px; }
+
+/* Media Queries */
+@media only screen and (min-width: 900px) {
+  #hero #roles {
+    font-size: 45px; } }
