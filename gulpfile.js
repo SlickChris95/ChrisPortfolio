@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
-
+//
 gulp.task('default',['styles'],function(){
   gulp.watch('sass/**/**.scss',['styles']);
   gulp.watch('*.html').on('change',browserSync.reload);
