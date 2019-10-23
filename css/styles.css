@@ -5,6 +5,40 @@
           box-sizing: border-box;
   color: black; }
 
+/*
+**typewritter
+*/
+.caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+#demo {
+  color: #e05038;
+  font-size: 2.3em; }
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 33px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite; }
+
+@keyframes "blink" {
+  from, to {
+    color: transparent; }
+  50% {
+    color: black; } }
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent; }
+  50% {
+    color: black; } }
+
 nav .navbar-nav li a {
   color: white !important; }
 
@@ -37,6 +71,9 @@ nav .navbar-nav li a {
     margin-bottom: 47px; }
   #skills .softskills-container {
     font-size: 26px; }
+
+.quote {
+  margin-top: 70px; }
 
 #hero {
   background: url("/imgs/space-back.jpg") 50% 0 repeat fixed;
@@ -83,6 +120,7 @@ nav .navbar-nav li a {
 .logo {
   width: 45px;
   border-radius: 60%;
+  color: #9ba773;
   margin: 0px 10px 0px 10px;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

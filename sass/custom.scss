@@ -2,7 +2,8 @@ $debug-border: 1px solid black;
 $thunder-bird: rgba(217, 30, 24, 1);
 $outerSpace: #2e3131;
 $background: #e6af4b;
-$secondary: #e05038;
+// $secondary: #e05038;
+$secondary: #533126;
 $tertiary: #f2cbbc;
 $primary: #334431;
 /*
@@ -12,13 +13,14 @@ $primary: #334431;
 .navigation-text {
   color: white;
 }
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-.custom-toggler.navbar-toggler {
-  border-color: rgba(217, 30, 24, 1);
-  // border: 1px solid white;
-}
+// .custom-toggler .navbar-toggler-icon {
+//   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+// }
+// .custom-toggler.navbar-toggler {
+//   // border-color: rgba(217, 30, 24, 1);
+//   border: 1px solid white;
+// }
+
 /* change the background color */
 .navbar-custom {
     // background-color:#e4f1fe;
