@@ -26,7 +26,7 @@ setTimeout(typeWriter, speed);
 function typeWriter() {
   if (pos < data[turn].length) {
     document.getElementById("demo").innerHTML += data[turn].charAt(pos);
-    console.log(data[turn].charAt(pos));
+    // console.log(data[turn].charAt(pos));
     pos++;
     setTimeout(typeWriter, speed);
   } else {
