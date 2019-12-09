@@ -9,7 +9,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #C64A4A; }
+  background-color: #1F1F1F; }
 
 .signature {
   display: -webkit-box;
@@ -30,13 +30,20 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  list-style-type: none;
-  border: 1px solid red; }
+  list-style-type: none; }
   .links-container li {
     padding: 10px;
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    -webkit-transition: .5s;
+    transition: .5s; }
+    .links-container li:hover {
+      background: grey;
+      border-bottom: 3px solid #EED484;
+      color: white; }
   .links-container a {
-    color: #EED484; }
+    color: #D7D7D7;
+    -webkit-transition: .5s;
+    transition: .5s; }
     .links-container a:hover {
       color: white;
       text-decoration: none; }

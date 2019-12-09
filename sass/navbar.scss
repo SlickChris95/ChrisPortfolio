@@ -12,6 +12,12 @@ $desktop: 1020px;
 $garnet : #762330;
 $gold : #EED484;
 
+
+$darkNav:#1F1F1F;
+$hoverBack:#393838;
+$bottomBorder: #E7CD79;
+$greyNavItem: #D7D7D7;
+
 .floatingNav {
   width: calc(100vh - 100px);
   border-radius: 2px;
@@ -23,7 +29,7 @@ $gold : #EED484;
   display: flex;
   justify-content: space-between;
   // justify-content: flex-end;
-  background-color: $lightRed;
+  background-color: $darkNav;
 
 }
 .signature {
@@ -42,13 +48,21 @@ $gold : #EED484;
  display: flex;
  justify-content: center;
  list-style-type: none;
- border: 1px solid red;
+ // border: 1px solid red;
  li {
    padding: 10px;
    font-size: 1.3em;
+   // border: 1px solid black;
+   transition: .5s;
+   &:hover {
+     background: grey;
+     border-bottom: 3px solid $gold;
+     color: white;
+   }
    }
  a {
-   color: $gold;
+   color: $greyNavItem;
+   transition: .5s;
    &:hover {
      color: white;
      text-decoration: none;
