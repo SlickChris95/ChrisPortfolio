@@ -35,13 +35,13 @@
     padding: 10px;
     font-size: 1.3em;
     -webkit-transition: .5s;
-    transition: .5s; }
+    transition: .5s;
+    color: #D7D7D7; }
     .links-container li:hover {
       background: grey;
       border-bottom: 3px solid #EED484;
       color: white; }
   .links-container a {
-    color: #D7D7D7;
     -webkit-transition: .5s;
     transition: .5s; }
     .links-container a:hover {
@@ -139,19 +139,25 @@
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #C64A4A;
+    background-color: #1F1F1F;
     overflow-x: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     padding-top: 60px; }
     #sliding-menu a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
       display: block;
       -webkit-transition: 0.3s;
-      transition: 0.3s; } }
+      transition: 0.3s; }
+      #sliding-menu a:hover {
+        text-decoration: none;
+        background-color: #393838; }
+      #sliding-menu a li {
+        color: #D7D7D7;
+        text-decoration: none;
+        padding: 8px 8px 8px 32px;
+        font-size: 25px; }
+        #sliding-menu a li:hover {
+          color: white; } }
 
 .slideMe {
   -webkit-transform-origin: 100% 0%;
