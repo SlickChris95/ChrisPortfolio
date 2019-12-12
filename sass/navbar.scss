@@ -59,7 +59,9 @@ $greyNavItem: #D7D7D7;
      background: grey;
      border-bottom: 3px solid $gold;
      color: white;
+     }
    }
+
    }
  a {
    transition: .5s;
@@ -70,7 +72,7 @@ $greyNavItem: #D7D7D7;
 
  }
 
-}
+
 #menuToggle {
   display: none;
 }
@@ -113,7 +115,7 @@ $greyNavItem: #D7D7D7;
     top: 5px;
     left: 37px;
     cursor: pointer;
-     // opacity: 1; /* hide this, checkbox*/
+     opacity: 0; /* hide this, checkbox*/
     z-index: 30; /* and place it over the hamburger */
     -webkit-touch-callout: none;
   }
@@ -213,4 +215,46 @@ $greyNavItem: #D7D7D7;
   opacity: 0;
   visibility: hidden;
   display: none;
+}
+footer {
+  border: 1px solid black;
+  padding: 30px 0px;
+  background-color: #202020;
+  h2 {
+    color: white;
+    font-size: 4.2em;
+  }
+  p {
+    color: white;
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .copywrite {
+    margin-top: 35px;
+  }
+}
+.email-footer {
+  border: 1px solid white;
+  width: 250px;
+  color: $darkSlate;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 30px;
+  &:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+  }
+}
+.footer-text {
+  font-size: 1.4em;
+  // border: 1px solid white;
+  color: #75746D;
+  span {
+    color: white;
+  }
 }

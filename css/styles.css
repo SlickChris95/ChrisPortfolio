@@ -157,27 +157,6 @@ nav .navbar-nav li a {
   #about .description {
     margin-top: 20px; }
 
-#project {
-  background-color: #e6af4b;
-  margin: 80px 0 30px 0; }
-  #project h1 {
-    text-align: center;
-    padding: 10px;
-    color: #334431;
-    margin-bottom: 50px; }
-  #project .project-pic {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    background-color: #336e7b; }
-  #project .project-link {
-    color: black; }
-    #project .project-link:hover {
-      text-decoration: none; }
-
-.col-lg-4 h3 {
-  color: #334431; }
-
 @-webkit-keyframes bounce {
   0%, 100%, 20%, 50%, 80% {
     -webkit-transform: translateY(0);
@@ -200,7 +179,78 @@ nav .navbar-nav li a {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px); } }
 
+/* Card test section*/
+.project {
+  margin-top: 60px;
+  margin-bottom: 100px; }
+  .project h2 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2.5em;
+    color: #334431;
+    position: relative;
+    padding-bottom: 10px; }
+    .project h2:before {
+      content: "";
+      position: absolute;
+      width: 10%;
+      height: 1px;
+      bottom: 0;
+      left: 45%;
+      border-bottom: 4px solid #e6af4b; }
+
+.collection-container {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1000px;
+  margin: 30px auto;
+  background-image: url(imgs/icon-rocket.png); }
+
+.collection-item {
+  height: 400px;
+  width: 300px;
+  -webkit-box-shadow: 0 2px 12px 0 rgba(255, 215, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 2px 12px 0 rgba(255, 215, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin: 15px; }
+  .collection-item:hover {
+    opacity: 0.7; }
+
+.item-picture {
+  height: 100px;
+  width: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #e6af4b; }
+
+.item-description {
+  padding: 15px;
+  height: 210px; }
+
+.item-icon {
+  color: #e6af4b;
+  position: relative;
+  top: 0px;
+  left: 200px;
+  opacity: 0.7; }
+
 /* Media Queries */
+@media only screen and (max-width: 1050px) {
+  .collection-container {
+    width: 100%; } }
+
 @media only screen and (min-width: 900px) {
   #hero #roles {
     font-size: 45px; } }

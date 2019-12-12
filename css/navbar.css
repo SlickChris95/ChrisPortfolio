@@ -41,12 +41,13 @@
       background: grey;
       border-bottom: 3px solid #EED484;
       color: white; }
-  .links-container a {
-    -webkit-transition: .5s;
-    transition: .5s; }
-    .links-container a:hover {
-      color: white;
-      text-decoration: none; }
+
+a {
+  -webkit-transition: .5s;
+  transition: .5s; }
+  a:hover {
+    color: white;
+    text-decoration: none; }
 
 #menuToggle {
   display: none; }
@@ -85,6 +86,8 @@
       top: 5px;
       left: 37px;
       cursor: pointer;
+      opacity: 0;
+      /* hide this, checkbox*/
       z-index: 30;
       /* and place it over the hamburger */
       -webkit-touch-callout: none; }
@@ -173,3 +176,36 @@
   opacity: 0;
   visibility: hidden;
   display: none; }
+
+footer {
+  border: 1px solid black;
+  padding: 30px 0px;
+  background-color: #202020; }
+  footer h2 {
+    color: white;
+    font-size: 4.2em; }
+  footer p {
+    color: white; }
+  footer a:hover {
+    text-decoration: none; }
+  footer .copywrite {
+    margin-top: 35px; }
+
+.email-footer {
+  border: 1px solid white;
+  width: 250px;
+  color: #2F3635;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 30px; }
+  .email-footer:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none; }
+
+.footer-text {
+  font-size: 1.4em;
+  color: #75746D; }
+  .footer-text span {
+    color: white; }
