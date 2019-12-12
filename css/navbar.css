@@ -206,5 +206,5 @@ footer {
 .footer-text {
   font-size: 1.4em;
   color: #75746D; }
-  .footer-text span {
+  .footer-text span a {
     color: white; }
