@@ -39,12 +39,6 @@
   50% {
     color: black; } }
 
-nav .navbar-nav li a {
-  color: white !important; }
-
-.navbar-light .navbar-nav .nav-link {
-  color: red; }
-
 #skills {
   margin: 120px 0px 60px 0px; }
   #skills .skills-column {

@@ -41,13 +41,12 @@
       background: grey;
       border-bottom: 3px solid #EED484;
       color: white; }
-
-a {
-  -webkit-transition: .5s;
-  transition: .5s; }
-  a:hover {
-    color: white;
-    text-decoration: none; }
+  .links-container a {
+    -webkit-transition: .5s;
+    transition: .5s; }
+    .links-container a:hover {
+      color: white;
+      text-decoration: none; }
 
 #menuToggle {
   display: none; }
