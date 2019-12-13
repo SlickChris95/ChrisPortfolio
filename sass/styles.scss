@@ -110,14 +110,33 @@ $darkNav:#1F1F1F;
       font-size: 1.5em;
     }
   }
-  
+
   h1 {
-    /* text styles */
-    font-size: 5em;
+    span {
+      /* text styles */
+      font-size: 2em;
+      color: white;
+      /*margins */
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+.hero-quote {
+  // border: 1px solid white;
+  position: relative;
+  top: 285px;
+  p {
     color: white;
-    /*margins */
-    margin-top: 0;
-    margin-bottom: 0.5em;
+    font-size: 20px;
+    &:nth-child(1) {
+      font-size: 1.3em;
+      color: $background;
+    }
+    &:nth-child(2) {
+      opacity: 0.5;
+    }
+
   }
 }
 
