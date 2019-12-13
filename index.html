@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/navbar.css">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
   <title>Christian's Portfolio</title>
   <!-- Bootstrap core CSS -->
@@ -58,9 +61,9 @@
     <div>
       <h1><span>Christian Torres</span></h1>
     </div>
-    <div class="hero-quote">
+    <div onmouseover="revealBottom()" onmouseleave="hideBottom()" class="hero-quote" id="hero-quote">
       <p>“You’re only given a little spark of madness. You mustn’t lose it.”
-      <p>Robin Williams</p>
+      <p id="hero-quote-bottom"class="hero-quote-bottom">Robin Williams</p>
     </div>
 
 </p>
@@ -104,7 +107,7 @@
   <section class="project"> <!--Test -->
     <h2 class="section-title">Web Applications</h2>
   <div class="collection-container">
-    <div class="collection-item">
+    <div data-aos="fade-down" class="collection-item"  data-aos-duration="600">
       <div class="item-picture" style="background-image: url(https://res.cloudinary.com/slickchris33/image/upload/v1576036990/Temp/screencapture-file-C-Users-Chris-Desktop-Folder-Coding-code-MomentumClone-index-html-2019-12-10-20_01_06.png)">
       </div>
       <div class="item-description">
@@ -113,17 +116,17 @@
       </div>
       <a href="https://github.com/SlickChris95/momentumClone" target="_blank"><i class="material-icons md-36 material item-icon" title="github code">code</i></a>
     </div>
-    <div class="collection-item">
+    <div data-aos="fade-down" data-aos-duration="600" class="collection-item">
       <div class="item-picture" style="background-image: url(https://res.cloudinary.com/slickchris33/image/upload/v1576037480/Temp/budget_calc.png)">
       </div>
       <div class="item-description">
         <h4>Budget App</h4>
         <p>Visualize and keep track of your monthly expenses </p>
       </div>
-      <a href="https://college-budgetapp.herokuapp.com/" target="_blank"><i class="material-icons md-36 material item-icon" title="github code">computer</i></a>
+      <a href="https://college-budgetapp.herokuapp.com/" target="_blank"><i class="material-icons md-36 material item-icon" title="live preview">computer</i></a>
       <a href="https://github.com/SlickChris95/BudgetApp" target="_blank"><i class="material-icons md-36 material" style="color:#EED484;position:relative;left:40px;" title="github code">code</i></a>
     </div>
-    <div class="collection-item">
+    <div data-aos="fade-down" data-aos-duration="600" class="collection-item">
       <div class="item-picture" style="background-image: url(https://res.cloudinary.com/slickchris33/image/upload/v1576037718/Temp/calculator.png)">
       </div>
       <div class="item-description">
@@ -138,43 +141,35 @@
   <section class="project"> <!--Test -->
     <h2 class="section-title">Websites</h2>
   <div class="collection-container">
-    <div class="collection-item">
+    <div data-aos="fade-down" data-aos-duration="600" class="collection-item">
       <div class="item-picture" style="background-image: url(https://res.cloudinary.com/slickchris33/image/upload/v1576037910/Temp/tacos-tijuana.png)">
       </div>
       <div class="item-description">
         <h4>Tacos Tijuana</h4>
         <p>Tacos Tijuana was a website that was built for a small family restaurant chain located in Arizona.</p>
       </div>
-      <i class="material-icons md-36 material item-icon" title="live preview">computer</i>
+      <a href="https://tacostijuanaaz.com/" target="_blank"><i class="material-icons md-36 material item-icon" title="live preview">computer</i></a>
     </div>
-    <div class="collection-item">
+    <div data-aos="fade-down" data-aos-duration="600" class="collection-item">
       <div class="item-picture" style="background-image: url(https://res.cloudinary.com/slickchris33/image/upload/v1576038174/Temp/pike-website.png)">
       </div>
       <div class="item-description">
         <h4>CSUSB Pike</h4>
         <p>CSUSB Pike was a website that I created for the non profit organization Pi Kappa Alpha at California State University. </p>
       </div>
-      <i class="material-icons md-36 material item-icon" title="live preview">computer</i>
+      <a href="http://csusbpike.com/" target="_blank"><i class="material-icons md-36 material item-icon" title="live preview">computer</i></a>
     </div>
-    <div class="collection-item">
+    <div data-aos="fade-down" data-aos-duration="600"  class="collection-item">
       <div class="item-picture" style="background-image: url(https://res.cloudinary.com/slickchris33/image/upload/v1576038267/Temp/grace4vets.png)">
       </div>
       <div class="item-description">
         <h4>Grace For U.S Veterans</h4>
         <p>Grace for U.S Vets was a website built in order to help provide resources for United States veterans.</p>
       </div>
-      <i class="material-icons md-36 material item-icon" title="live preview">computer</i>
+      <a href="http://graceforusvets.org/" target="_blank"><i class="material-icons md-36 material item-icon" title="live preview">computer</i></a>
     </div>
   </div>
   </section>
-
-
-
-
-
-
-
-
 
   </section>
   <section id="skills"> <!-- Skills -->
@@ -273,13 +268,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   <script src="assets/js/main.js" charset="utf-8"></script>
   <script src="js/typewritter.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
   <!-- modal -->
-  <script>
-  $(document).ready(function(){
-    $("myModal").modal();
-  });
 
+  <script>
+    AOS.init();
   </script>
+
 </body>
 </html>
