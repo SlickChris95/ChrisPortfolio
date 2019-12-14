@@ -27,6 +27,9 @@ $greyNavItem: #D7D7D7;
 .menu-container {
   // border: 1px solid black;
   display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
   justify-content: space-between;
   // justify-content: flex-end;
   background-color: $darkNav;
@@ -255,7 +258,7 @@ footer {
   span {
     a {
       color: white;
-      
+
     }
   }
 }
