@@ -1,24 +1,80 @@
+$background: #e6af4b;
+
 .blog-intro-container {
+  background-color: $background;
   .blog-intro {
     font-size: 5em;
-    border: 1px solid black;
+    // border: 1px solid black;
     text-align: center;
     padding-top: 70px;
+    color: white;
   }
   p {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
+    color: white;
+    padding: 30px;
   }
 }
 
-.blog-post-grid {
-  border: 1px solid black;
-  justify-content: center;
+.blog-container {
+  margin-top: 30px;
   display: flex;
-  .blog-post {
-    border: 1px solid black;
-    width: 300px;
-    height: 200px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1000px;
+  // border: 1px solid black;
+  margin: 30px auto;
+  background-image: url(imgs/icon-rocket.png);
+
+
+}
+.blog-item {
+  height: 300px;
+  width: 300px;
+  // background-color: blue;
+  // border: 1px solid black;
+  // padding: 20px;
+  box-shadow: 0 2px 12px 0 rgba(255,215,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  transition: .3s;
+  &:hover {
+    opacity: 0.7;
+  }
+  margin: 15px;
+
+}
+.blog-picture {
+  height: 100px;
+  width: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  // background-image: url(https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  // background-image: url(https://res.cloudinary.com/slickchris33/image/upload/v1576036990/Temp/screencapture-file-C-Users-Chris-Desktop-Folder-Coding-code-MomentumClone-index-html-2019-12-10-20_01_06.png);
+  background-color: red;
+}
+.blog-description {
+  padding: 15px;
+  // border: 1px solid black;
+  height: 210px;
+  h2 {
+    font-size: 1.9em;
     text-align: center;
   }
+  .date {
+    color: tomato;
+    position: relative;
+    top: 55px;
+    left: 190px;
+  }
 }
+// .item-icon {
+//   color: red;
+//   position: relative;
+//   top: 0px;
+//   left: 200px;
+//   opacity: 0.7;
+// }
