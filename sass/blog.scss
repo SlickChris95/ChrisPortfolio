@@ -1,18 +1,20 @@
 $background: #e6af4b;
 
 .blog-intro-container {
-  background-color: $background;
+  padding: 15px;
+  background-color: #EEEEEE;
   .blog-intro {
-    font-size: 5em;
+    padding: 5px;
+    font-size: 3.7em;
     // border: 1px solid black;
     text-align: center;
     padding-top: 70px;
-    color: white;
+    color: black;
   }
   p {
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: #55555C;
     padding: 30px;
   }
 }
@@ -26,8 +28,6 @@ $background: #e6af4b;
   // border: 1px solid black;
   margin: 30px auto;
   background-image: url(imgs/icon-rocket.png);
-
-
 }
 .blog-item {
   height: 300px;
@@ -54,7 +54,7 @@ $background: #e6af4b;
   border-top-right-radius: 20px;
   // background-image: url(https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
   // background-image: url(https://res.cloudinary.com/slickchris33/image/upload/v1576036990/Temp/screencapture-file-C-Users-Chris-Desktop-Folder-Coding-code-MomentumClone-index-html-2019-12-10-20_01_06.png);
-  background-color: red;
+  background-color: $background;
 }
 .blog-description {
   padding: 15px;
@@ -67,8 +67,10 @@ $background: #e6af4b;
   .date {
     color: tomato;
     position: relative;
+    width: 120px;
     top: 55px;
-    left: 190px;
+    left: 170px;
+    // border: 1px solid black;
   }
 }
 // .item-icon {
