@@ -185,19 +185,31 @@
   color: #e05038;
   padding: 20px; }
 
-#about {
-  margin-top: 50px;
-  background-color: white; }
-  #about #profile-pic {
+.profile-container {
+  padding-top: 100px; }
+  .profile-container .author-pic {
     width: 300px;
     border-radius: 50%;
     display: block;
-    margin: 30px auto; }
-  #about #logo-container {
-    width: 300px;
-    text-align: center; }
-  #about .description {
-    margin-top: 20px; }
+    margin: 20px auto; }
+  .profile-container .authors-note {
+    border: 1px solid black;
+    padding: 5px;
+    width: 800px;
+    margin: 50px auto; }
+
+.booklist-container {
+  border: 1px solid black;
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px; }
+  .booklist-container h2 {
+    font-size: 2.3em; }
+  .booklist-container p {
+    font-size: 1em; }
+  .booklist-container img {
+    padding: 15px; }
 
 @-webkit-keyframes bounce {
   0%, 100%, 20%, 50%, 80% {
