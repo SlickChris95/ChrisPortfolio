@@ -193,13 +193,16 @@
     display: block;
     margin: 20px auto; }
   .profile-container .authors-note {
-    border: 1px solid black;
     padding: 5px;
     width: 800px;
     margin: 50px auto; }
+    .profile-container .authors-note h1, .profile-container .authors-note h2, .profile-container .authors-note h3 {
+      text-align: center;
+      padding-bottom: 10px; }
+    .profile-container .authors-note p {
+      font-size: 1.2em; }
 
 .booklist-container {
-  border: 1px solid black;
   width: 900px;
   margin: 0 auto;
   text-align: center;

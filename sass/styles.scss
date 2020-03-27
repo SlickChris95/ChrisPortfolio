@@ -264,16 +264,23 @@ $darkNav:#1F1F1F;
     margin: 20px auto;
   }
   .authors-note {
-    border: 1px solid black;
+    // border: 1px solid black;
     padding: 5px;
     width: 800px;
     margin: 50px auto;
+    h1,h2,h3 {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+    }
   }
 }
 
 // about.html BookList
 .booklist-container{
-  border: 1px solid black;
+  // border: 1px solid black;
   width: 900px;
   margin: 0 auto;
   text-align: center;
